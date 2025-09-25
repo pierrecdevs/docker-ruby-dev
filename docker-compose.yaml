@@ -1,0 +1,10 @@
+services:
+  ruby_dev:
+    build: .
+    container_name: ruby_env
+    volumes:
+      - ./app:/opt/app
+    ports:
+      - "3000:3000"
+    tty: true
+

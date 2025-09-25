@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+APP_PATH=${APP_PATH:-/opt/app}
+
+docker compose run --rm -w $APP_PATH --service-ports ruby_dev
